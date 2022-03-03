@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=no">
+  <meta name="description" content="API docs for the getConversationList method from the V2TIMConversationManager class, for the Dart programming language.">
+  <title>getConversationList method - V2TIMConversationManager class - v2_tim_conversation_manager library - Dart API</title>
+
+  
+  <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500,400i,400,300|Source+Sans+Pro:400,300,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="../../static-assets/github.css">
+  <link rel="stylesheet" href="../../static-assets/styles.css">
+  <link rel="icon" href="../../static-assets/favicon.png">
+
+</head>
+
+<body data-base-href="../../"
+      data-using-base-href="false">
+
+<div id="overlay-under-drawer"></div>
+
+<header id="title">
+  <button id="sidenav-left-toggle" type="button">&nbsp;</button>
+  <ol class="breadcrumbs gt-separated dark hidden-xs">
+    <li><a href="../../index.html">tencent_im_sdk_plugin</a></li>
+    <li><a href="../../manager_v2_tim_conversation_manager/manager_v2_tim_conversation_manager-library.html">v2_tim_conversation_manager</a></li>
+    <li><a href="../../manager_v2_tim_conversation_manager/V2TIMConversationManager-class.html">V2TIMConversationManager</a></li>
+    <li class="self-crumb">getConversationList method</li>
+  </ol>
+  <div class="self-name">getConversationList</div>
+  <form class="search navbar-right" role="search">
+    <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+  </form>
+</header>
+
+<main>
+
+  <div id="dartdoc-sidebar-left" class="col-xs-6 col-sm-3 col-md-2 sidebar sidebar-offcanvas-left">
+    <header id="header-search-sidebar" class="hidden-l">
+      <form class="search-sidebar" role="search">
+        <input type="text" id="search-sidebar" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+      </form>
+    </header>
+    
+    <ol class="breadcrumbs gt-separated dark hidden-l" id="sidebar-nav">
+      <li><a href="../../index.html">tencent_im_sdk_plugin</a></li>
+      <li><a href="../../manager_v2_tim_conversation_manager/manager_v2_tim_conversation_manager-library.html">v2_tim_conversation_manager</a></li>
+      <li><a href="../../manager_v2_tim_conversation_manager/V2TIMConversationManager-class.html">V2TIMConversationManager</a></li>
+      <li class="self-crumb">getConversationList method</li>
+    </ol>
+    
+    <h5>V2TIMConversationManager class</h5>
+    <ol>
+    
+    
+        <li class="section-title inherited">
+            <a href="../../manager_v2_tim_conversation_manager/V2TIMConversationManager-class.html#instance-properties">Properties</a>
+        </li>
+        <li class="inherited"><a href="https://api.flutter.dev/flutter/dart-core/Object/hashCode.html">hashCode</a></li>
+        <li class="inherited"><a href="https://api.flutter.dev/flutter/dart-core/Object/runtimeType.html">runtimeType</a></li>
+    
+        <li class="section-title"><a href="../../manager_v2_tim_conversation_manager/V2TIMConversationManager-class.html#instance-methods">Methods</a></li>
+        <li><a href="../../manager_v2_tim_conversation_manager/V2TIMConversationManager/deleteConversation.html">deleteConversation</a></li>
+        <li><a href="../../manager_v2_tim_conversation_manager/V2TIMConversationManager/getConversation.html">getConversation</a></li>
+        <li><a href="../../manager_v2_tim_conversation_manager/V2TIMConversationManager/getConversationList.html">getConversationList</a></li>
+        <li class="inherited"><a href="https://api.flutter.dev/flutter/dart-core/Object/noSuchMethod.html">noSuchMethod</a></li>
+        <li><a href="../../manager_v2_tim_conversation_manager/V2TIMConversationManager/setConversationDraft.html">setConversationDraft</a></li>
+        <li><a href="../../manager_v2_tim_conversation_manager/V2TIMConversationManager/setConversationListener.html">setConversationListener</a></li>
+        <li class="inherited"><a href="https://api.flutter.dev/flutter/dart-core/Object/toString.html">toString</a></li>
+    
+        <li class="section-title inherited"><a href="../../manager_v2_tim_conversation_manager/V2TIMConversationManager-class.html#operators">Operators</a></li>
+        <li class="inherited"><a href="https://api.flutter.dev/flutter/dart-core/Object/operator_equals.html">operator ==</a></li>
+    
+    
+    
+    
+    
+    </ol>
+  </div><!--/.sidebar-offcanvas-->
+
+  <div id="dartdoc-main-content" class="col-xs-12 col-sm-9 col-md-8 main-content">
+      <div><h1><span class="kind-method">getConversationList</span> method </h1></div>
+
+    <section class="multi-line-signature">
+      <span class="returntype"><a href="https://api.flutter.dev/flutter/dart-async/Future-class.html">Future</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="../../models_v2_tim_value_callback/V2TimValueCallback-class.html">V2TimValueCallback</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="../../models_v2_tim_conversation_result/V2TimConversationResult-class.html">V2TimConversationResult</a></span>&gt;</span></span>&gt;</span></span>
+            <span class="name ">getConversationList</span>
+(<wbr><ol class="parameter-list"><li><span class="parameter" id="getConversationList-param-nextSeq">{<span>@<a href="https://api.flutter.dev/flutter/widgets/required-constant.html">required</a></span> <span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> <span class="parameter-name">nextSeq</span>, </span></li>
+<li><span class="parameter" id="getConversationList-param-count"><span>@<a href="https://api.flutter.dev/flutter/widgets/required-constant.html">required</a></span> <span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> <span class="parameter-name">count</span>}</span></li>
+</ol>)
+      
+    </section>
+    <section class="desc markdown">
+      <p>获取会话列表</p>
+<pre class="language-dart"><code>  一个会话对应一个聊天窗口，比如跟一个好友的 1v1 聊天，或者一个聊天群，都是一个会话。
+  由于历史的会话数量可能很多，所以该接口希望您采用分页查询的方式进行调用。
+  该接口拉取的是本地缓存的会话，如果服务器会话有更新，SDK 内部会自动同步，然后在 V2TIMConversationListener 回调告知客户。
+  该接口获取的会话列表默认已经按照会话 lastMessage -&gt; timestamp 做了排序，timestamp 越大，会话越靠前。
+  如果会话全部拉取完毕，成功回调里面 V2TIMConversationResult 中的 isFinished 获取字段值为 true。
+  最多能拉取到最近的5000个会话。
+</code></pre>
+<p>参数</p>
+<pre class="language-dart"><code>nextSeq	分页拉取的游标，第一次默认取传 0，后续分页拉传上一次分页拉取成功回调里的 nextSeq
+count	分页拉取的个数，一次分页拉取不宜太多，会影响拉取的速度，建议每次拉取 100 个会话
+</code></pre>
+    </section>
+    
+    <section class="summary source-code" id="source">
+      <h2><span>Implementation</span></h2>
+      <pre class="language-dart"><code class="language-dart">Future&lt;V2TimValueCallback&lt;V2TimConversationResult&gt;&gt; getConversationList({
+  @required int nextSeq,
+  @required int count,
+}) async {
+  return V2TimValueCallback&lt;V2TimConversationResult&gt;.fromJson(
+    formatJson(
+      await _channel.invokeMethod(
+        &quot;getConversationList&quot;,
+        buildParam(
+          {
+            &quot;nextSeq&quot;: nextSeq,
+            &quot;count&quot;: count,
+          },
+        ),
+      ),
+    ),
+  );
+}</code></pre>
+    </section>
+
+  </div> <!-- /.main-content -->
+
+  <div id="dartdoc-sidebar-right" class="col-xs-6 col-sm-6 col-md-2 sidebar sidebar-offcanvas-right">
+  </div><!--/.sidebar-offcanvas-->
+
+</main>
+
+<footer>
+  <span class="no-break">
+    tencent_im_sdk_plugin
+      1.0.2
+  </span>
+
+</footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="../../static-assets/typeahead.bundle.min.js"></script>
+<script src="../../static-assets/highlight.pack.js"></script>
+<script src="../../static-assets/URI.js"></script>
+<script src="../../static-assets/script.js"></script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,10 @@
+.DS_Store
+.dart_tool/
+
+.packages
+.pub/
+.idea/
+.gradle/
+.bat
+build/
+example/lib/utils/Config.dart

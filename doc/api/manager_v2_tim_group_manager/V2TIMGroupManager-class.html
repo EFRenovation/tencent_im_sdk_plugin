@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=no">
+  <meta name="description" content="API docs for the V2TIMGroupManager class from the v2_tim_group_manager library, for the Dart programming language.">
+  <title>V2TIMGroupManager class - v2_tim_group_manager library - Dart API</title>
+
+  
+  <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500,400i,400,300|Source+Sans+Pro:400,300,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="../static-assets/github.css">
+  <link rel="stylesheet" href="../static-assets/styles.css">
+  <link rel="icon" href="../static-assets/favicon.png">
+
+</head>
+
+<body data-base-href="../"
+      data-using-base-href="false">
+
+<div id="overlay-under-drawer"></div>
+
+<header id="title">
+  <button id="sidenav-left-toggle" type="button">&nbsp;</button>
+  <ol class="breadcrumbs gt-separated dark hidden-xs">
+    <li><a href="../index.html">tencent_im_sdk_plugin</a></li>
+    <li><a href="../manager_v2_tim_group_manager/manager_v2_tim_group_manager-library.html">v2_tim_group_manager</a></li>
+    <li class="self-crumb">V2TIMGroupManager class</li>
+  </ol>
+  <div class="self-name">V2TIMGroupManager</div>
+  <form class="search navbar-right" role="search">
+    <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+  </form>
+</header>
+
+<main>
+
+  <div id="dartdoc-sidebar-left" class="col-xs-6 col-sm-3 col-md-2 sidebar sidebar-offcanvas-left">
+    <header id="header-search-sidebar" class="hidden-l">
+      <form class="search-sidebar" role="search">
+        <input type="text" id="search-sidebar" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+      </form>
+    </header>
+    
+    <ol class="breadcrumbs gt-separated dark hidden-l" id="sidebar-nav">
+      <li><a href="../index.html">tencent_im_sdk_plugin</a></li>
+      <li><a href="../manager_v2_tim_group_manager/manager_v2_tim_group_manager-library.html">v2_tim_group_manager</a></li>
+      <li class="self-crumb">V2TIMGroupManager class</li>
+    </ol>
+    
+    <h5>v2_tim_group_manager library</h5>
+    <ol>
+      <li class="section-title"><a href="../manager_v2_tim_group_manager/manager_v2_tim_group_manager-library.html#classes">Classes</a></li>
+      <li><a href="../manager_v2_tim_group_manager/V2TIMGroupManager-class.html">V2TIMGroupManager</a></li>
+    
+    
+    
+    
+    
+    
+    
+    
+    </ol>
+  </div>
+
+  <div id="dartdoc-main-content" class="col-xs-12 col-sm-9 col-md-8 main-content">
+      <div><h1><span class="kind-class">V2TIMGroupManager</span> class      <span class="category manager cp-0 linked" title="This is part of the Manager Topic."><a href="../topics/Manager-topic.html">Manager</a></span>
+</h1></div>
+
+    <section class="desc markdown">
+      <p>群组高级接口，包含了群组的高级功能，例如群成员邀请、非群成员申请进群等操作接口。</p>
+<p><a href="../manager_v2_tim_group_manager/V2TIMGroupManager/createGroup.html">createGroup</a>创建自定义群组（高级版本：可以指定初始的群成员）</p>
+<p><a href="../manager_v2_tim_group_manager/V2TIMGroupManager/getJoinedGroupList.html">getJoinedGroupList</a>获取当前用户已经加入的群列表</p>
+<p><a href="../manager_v2_tim_group_manager/V2TIMGroupManager/getGroupsInfo.html">getGroupsInfo</a>拉取群资料</p>
+<p><a href="../manager_v2_tim_group_manager/V2TIMGroupManager/setGroupInfo.html">setGroupInfo</a>修改群资料</p>
+<p><a href="../manager_v2_tim_group_manager/V2TIMGroupManager/setReceiveMessageOpt.html">setReceiveMessageOpt</a>修改群消息接收选项</p>
+<p><a href="../manager_v2_tim_group_manager/V2TIMGroupManager/initGroupAttributes.html">initGroupAttributes</a>初始化群属性，会清空原有的群属性列表</p>
+<p><a href="../manager_v2_tim_group_manager/V2TIMGroupManager/setGroupAttributes.html">setGroupAttributes</a>设置群属性。已有该群属性则更新其 value 值，没有该群属性则添加该属性。</p>
+<p><a href="../manager_v2_tim_group_manager/V2TIMGroupManager/deleteGroupAttributes.html">deleteGroupAttributes</a>删除指定群属性，keys 传 null 则清空所有群属性。</p>
+<p><a href="../manager_v2_tim_group_manager/V2TIMGroupManager/getGroupAttributes.html">getGroupAttributes</a>获取指定群属性，keys 传 null 则获取所有群属性。</p>
+<p><a href="../manager_v2_tim_group_manager/V2TIMGroupManager/getGroupMemberList.html">getGroupMemberList</a>获取群成员列表</p>
+<p><a href="../manager_v2_tim_group_manager/V2TIMGroupManager/getGroupMembersInfo.html">getGroupMembersInfo</a>获取指定的群成员资料</p>
+<p><a href="../manager_v2_tim_group_manager/V2TIMGroupManager/setGroupMemberInfo.html">setGroupMemberInfo</a>修改指定的群成员资料</p>
+<p><a href="../manager_v2_tim_group_manager/V2TIMGroupManager/muteGroupMember.html">muteGroupMember</a>禁言（只有管理员或群主能够调用）</p>
+<p><a href="../manager_v2_tim_group_manager/V2TIMGroupManager/inviteUserToGroup.html">inviteUserToGroup</a>邀请他人入群</p>
+<p><a href="../manager_v2_tim_group_manager/V2TIMGroupManager/kickGroupMember.html">kickGroupMember</a>踢人</p>
+<p><a href="../manager_v2_tim_group_manager/V2TIMGroupManager/setGroupMemberRole.html">setGroupMemberRole</a>切换群成员的角色。</p>
+<p><a href="../manager_v2_tim_group_manager/V2TIMGroupManager/transferGroupOwner.html">transferGroupOwner</a>转让群主</p>
+<p><a href="../manager_v2_tim_group_manager/V2TIMGroupManager/getGroupApplicationList.html">getGroupApplicationList</a>获取加群的申请列表</p>
+<p><a href="../manager_v2_tim_group_manager/V2TIMGroupManager/acceptGroupApplication.html">acceptGroupApplication</a>同意某一条加群申请</p>
+<p><a href="../manager_v2_tim_group_manager/V2TIMGroupManager/refuseGroupApplication.html">refuseGroupApplication</a>拒绝某一条加群申请</p>
+<p><a href="../manager_v2_tim_group_manager/V2TIMGroupManager/setGroupApplicationRead.html">setGroupApplicationRead</a>标记申请列表为已读</p>
+    </section>
+    
+
+
+    <section class="summary offset-anchor inherited" id="instance-properties">
+      <h2>Properties</h2>
+
+      <dl class="properties">
+        <dt id="hashCode" class="property inherited">
+          <span class="name"><a href="https://api.flutter.dev/flutter/dart-core/Object/hashCode.html">hashCode</a></span>
+          <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span>         
+        </dt>
+        <dd class="inherited">
+          The hash code for this object. <a href="https://api.flutter.dev/flutter/dart-core/Object/hashCode.html">[...]</a>
+                  <div class="features">read-only, inherited</div>
+</dd>
+        <dt id="runtimeType" class="property inherited">
+          <span class="name"><a href="https://api.flutter.dev/flutter/dart-core/Object/runtimeType.html">runtimeType</a></span>
+          <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/Type-class.html">Type</a></span>         
+        </dt>
+        <dd class="inherited">
+          A representation of the runtime type of the object. 
+                  <div class="features">read-only, inherited</div>
+</dd>
+      </dl>
+    </section>
+
+    <section class="summary offset-anchor" id="instance-methods">
+      <h2>Methods</h2>
+      <dl class="callables">
+        <dt id="acceptGroupApplication" class="callable">
+          <span class="name"><a href="../manager_v2_tim_group_manager/V2TIMGroupManager/acceptGroupApplication.html">acceptGroupApplication</a></span><span class="signature">(<wbr><span class="parameter" id="acceptGroupApplication-param-groupID">{<span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span> <span class="parameter-name">groupID</span>, </span><span class="parameter" id="acceptGroupApplication-param-reason"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span> <span class="parameter-name">reason</span>, </span><span class="parameter" id="acceptGroupApplication-param-fromUser"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span> <span class="parameter-name">fromUser</span>, </span><span class="parameter" id="acceptGroupApplication-param-toUser"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span> <span class="parameter-name">toUser</span>, </span><span class="parameter" id="acceptGroupApplication-param-addTime"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> <span class="parameter-name">addTime</span>, </span><span class="parameter" id="acceptGroupApplication-param-type"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> <span class="parameter-name">type</span>}</span>)
+            <span class="returntype parameter">&#8594; <a href="https://api.flutter.dev/flutter/dart-async/Future-class.html">Future</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="../models_v2_tim_callback/V2TimCallback-class.html">V2TimCallback</a></span>&gt;</span></span>
+          </span>
+                  </dt>
+        <dd>
+          同意某一条加群申请 
+                  
+</dd>
+        <dt id="createGroup" class="callable">
+          <span class="name"><a href="../manager_v2_tim_group_manager/V2TIMGroupManager/createGroup.html">createGroup</a></span><span class="signature">(<wbr><span class="parameter" id="createGroup-param-groupID">{<span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span> <span class="parameter-name">groupID</span>, </span><span class="parameter" id="createGroup-param-groupType"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span> <span class="parameter-name">groupType</span>, </span><span class="parameter" id="createGroup-param-groupName"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span> <span class="parameter-name">groupName</span>, </span><span class="parameter" id="createGroup-param-notification"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span> <span class="parameter-name">notification</span>, </span><span class="parameter" id="createGroup-param-introduction"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span> <span class="parameter-name">introduction</span>, </span><span class="parameter" id="createGroup-param-faceUrl"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span> <span class="parameter-name">faceUrl</span>, </span><span class="parameter" id="createGroup-param-isAllMuted"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a></span> <span class="parameter-name">isAllMuted</span>, </span><span class="parameter" id="createGroup-param-addOpt"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> <span class="parameter-name">addOpt</span>, </span><span class="parameter" id="createGroup-param-memberList"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/List-class.html">List</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.flutter.dev/flutter/dart-core/Map-class.html">Map</a></span>&gt;</span></span> <span class="parameter-name">memberList</span>}</span>)
+            <span class="returntype parameter">&#8594; <a href="https://api.flutter.dev/flutter/dart-async/Future-class.html">Future</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="../models_v2_tim_value_callback/V2TimValueCallback-class.html">V2TimValueCallback</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span>&gt;</span></span>&gt;</span></span>
+          </span>
+                  </dt>
+        <dd>
+          创建自定义群组（高级版本：可以指定初始的群成员） <a href="../manager_v2_tim_group_manager/V2TIMGroupManager/createGroup.html">[...]</a>
+                  
+</dd>
+        <dt id="deleteGroupAttributes" class="callable">
+          <span class="name"><a href="../manager_v2_tim_group_manager/V2TIMGroupManager/deleteGroupAttributes.html">deleteGroupAttributes</a></span><span class="signature">(<wbr><span class="parameter" id="deleteGroupAttributes-param-groupID">{<span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span> <span class="parameter-name">groupID</span>, </span><span class="parameter" id="deleteGroupAttributes-param-keys"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/List-class.html">List</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span>&gt;</span></span> <span class="parameter-name">keys</span>}</span>)
+            <span class="returntype parameter">&#8594; <a href="https://api.flutter.dev/flutter/dart-async/Future-class.html">Future</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="../models_v2_tim_callback/V2TimCallback-class.html">V2TimCallback</a></span>&gt;</span></span>
+          </span>
+                  </dt>
+        <dd>
+          删除指定群属性，keys 传 null 则清空所有群属性。 
+                  
+</dd>
+        <dt id="getGroupApplicationList" class="callable">
+          <span class="name"><a href="../manager_v2_tim_group_manager/V2TIMGroupManager/getGroupApplicationList.html">getGroupApplicationList</a></span><span class="signature">(<wbr>)
+            <span class="returntype parameter">&#8594; <a href="https://api.flutter.dev/flutter/dart-async/Future-class.html">Future</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="../models_v2_tim_value_callback/V2TimValueCallback-class.html">V2TimValueCallback</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="../models_v2_tim_group_application_result/V2TimGroupApplicationResult-class.html">V2TimGroupApplicationResult</a></span>&gt;</span></span>&gt;</span></span>
+          </span>
+                  </dt>
+        <dd>
+          获取加群的申请列表 
+                  
+</dd>
+        <dt id="getGroupAttributes" class="callable">
+          <span class="name"><a href="../manager_v2_tim_group_manager/V2TIMGroupManager/getGroupAttributes.html">getGroupAttributes</a></span><span class="signature">(<wbr><span class="parameter" id="getGroupAttributes-param-groupID">{<span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span> <span class="parameter-name">groupID</span>, </span><span class="parameter" id="getGroupAttributes-param-keys"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/List-class.html">List</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span>&gt;</span></span> <span class="parameter-name">keys</span>}</span>)
+            <span class="returntype parameter">&#8594; <a href="https://api.flutter.dev/flutter/dart-async/Future-class.html">Future</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="../models_v2_tim_value_callback/V2TimValueCallback-class.html">V2TimValueCallback</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.flutter.dev/flutter/dart-core/Map-class.html">Map</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span>, <span class="type-parameter"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span>&gt;</span></span>&gt;</span></span>&gt;</span></span>
+          </span>
+                  </dt>
+        <dd>
+          获取指定群属性，keys 传 null 则获取所有群属性。 
+                  
+</dd>
+        <dt id="getGroupMemberList" class="callable">
+          <span class="name"><a href="../manager_v2_tim_group_manager/V2TIMGroupManager/getGroupMemberList.html">getGroupMemberList</a></span><span class="signature">(<wbr><span class="parameter" id="getGroupMemberList-param-groupID">{<span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span> <span class="parameter-name">groupID</span>, </span><span class="parameter" id="getGroupMemberList-param-filter"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> <span class="parameter-name">filter</span>, </span><span class="parameter" id="getGroupMemberList-param-nextSeq"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/double-class.html">double</a></span> <span class="parameter-name">nextSeq</span>}</span>)
+            <span class="returntype parameter">&#8594; <a href="https://api.flutter.dev/flutter/dart-async/Future-class.html">Future</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="../models_v2_tim_value_callback/V2TimValueCallback-class.html">V2TimValueCallback</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="../models_v2_tim_group_member_info_result/V2TimGroupMemberInfoResult-class.html">V2TimGroupMemberInfoResult</a></span>&gt;</span></span>&gt;</span></span>
+          </span>
+                  </dt>
+        <dd>
+          获取群成员列表 <a href="../manager_v2_tim_group_manager/V2TIMGroupManager/getGroupMemberList.html">[...]</a>
+                  
+</dd>
+        <dt id="getGroupMembersInfo" class="callable">
+          <span class="name"><a href="../manager_v2_tim_group_manager/V2TIMGroupManager/getGroupMembersInfo.html">getGroupMembersInfo</a></span><span class="signature">(<wbr><span class="parameter" id="getGroupMembersInfo-param-groupID">{<span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span> <span class="parameter-name">groupID</span>, </span><span class="parameter" id="getGroupMembersInfo-param-memberList"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/List-class.html">List</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span>&gt;</span></span> <span class="parameter-name">memberList</span>}</span>)
+            <span class="returntype parameter">&#8594; <a href="https://api.flutter.dev/flutter/dart-async/Future-class.html">Future</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="../models_v2_tim_value_callback/V2TimValueCallback-class.html">V2TimValueCallback</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.flutter.dev/flutter/dart-core/List-class.html">List</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="../models_v2_tim_group_member_full_info/V2TimGroupMemberFullInfo-class.html">V2TimGroupMemberFullInfo</a></span>&gt;</span></span>&gt;</span></span>&gt;</span></span>
+          </span>
+                  </dt>
+        <dd>
+          获取指定的群成员资料 
+                  
+</dd>
+        <dt id="getGroupOnlineMemberCount" class="callable">
+          <span class="name"><a href="../manager_v2_tim_group_manager/V2TIMGroupManager/getGroupOnlineMemberCount.html">getGroupOnlineMemberCount</a></span><span class="signature">(<wbr><span class="parameter" id="getGroupOnlineMemberCount-param-groupID">{<span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span> <span class="parameter-name">groupID</span>}</span>)
+            <span class="returntype parameter">&#8594; <a href="https://api.flutter.dev/flutter/dart-async/Future-class.html">Future</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="../models_v2_tim_value_callback/V2TimValueCallback-class.html">V2TimValueCallback</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span>&gt;</span></span>&gt;</span></span>
+          </span>
+                  </dt>
+        <dd>
+          获取指定群属性，keys 传 null 则获取所有群属性。 
+                  
+</dd>
+        <dt id="getGroupsInfo" class="callable">
+          <span class="name"><a href="../manager_v2_tim_group_manager/V2TIMGroupManager/getGroupsInfo.html">getGroupsInfo</a></span><span class="signature">(<wbr><span class="parameter" id="getGroupsInfo-param-groupIDList">{<span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/List-class.html">List</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span>&gt;</span></span> <span class="parameter-name">groupIDList</span>}</span>)
+            <span class="returntype parameter">&#8594; <a href="https://api.flutter.dev/flutter/dart-async/Future-class.html">Future</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="../models_v2_tim_value_callback/V2TimValueCallback-class.html">V2TimValueCallback</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.flutter.dev/flutter/dart-core/List-class.html">List</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="../models_v2_tim_group_info_result/V2TimGroupInfoResult-class.html">V2TimGroupInfoResult</a></span>&gt;</span></span>&gt;</span></span>&gt;</span></span>
+          </span>
+                  </dt>
+        <dd>
+          拉取群资料 <a href="../manager_v2_tim_group_manager/V2TIMGroupManager/getGroupsInfo.html">[...]</a>
+                  
+</dd>
+        <dt id="getJoinedGroupList" class="callable">
+          <span class="name"><a href="../manager_v2_tim_group_manager/V2TIMGroupManager/getJoinedGroupList.html">getJoinedGroupList</a></span><span class="signature">(<wbr>)
+            <span class="returntype parameter">&#8594; <a href="https://api.flutter.dev/flutter/dart-async/Future-class.html">Future</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="../models_v2_tim_value_callback/V2TimValueCallback-class.html">V2TimValueCallback</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.flutter.dev/flutter/dart-core/List-class.html">List</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="../models_v2_tim_group_info/V2TimGroupInfo-class.html">V2TimGroupInfo</a></span>&gt;</span></span>&gt;</span></span>&gt;</span></span>
+          </span>
+                  </dt>
+        <dd>
+          获取当前用户已经加入的群列表 <a href="../manager_v2_tim_group_manager/V2TIMGroupManager/getJoinedGroupList.html">[...]</a>
+                  
+</dd>
+        <dt id="initGroupAttributes" class="callable">
+          <span class="name"><a href="../manager_v2_tim_group_manager/V2TIMGroupManager/initGroupAttributes.html">initGroupAttributes</a></span><span class="signature">(<wbr><span class="parameter" id="initGroupAttributes-param-groupID">{<span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span> <span class="parameter-name">groupID</span>, </span><span class="parameter" id="initGroupAttributes-param-attributes"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/Map-class.html">Map</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span>, <span class="type-parameter"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span>&gt;</span></span> <span class="parameter-name">attributes</span>}</span>)
+            <span class="returntype parameter">&#8594; <a href="https://api.flutter.dev/flutter/dart-async/Future-class.html">Future</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="../models_v2_tim_callback/V2TimCallback-class.html">V2TimCallback</a></span>&gt;</span></span>
+          </span>
+                  </dt>
+        <dd>
+          初始化群属性，会清空原有的群属性列表 <a href="../manager_v2_tim_group_manager/V2TIMGroupManager/initGroupAttributes.html">[...]</a>
+                  
+</dd>
+        <dt id="inviteUserToGroup" class="callable">
+          <span class="name"><a href="../manager_v2_tim_group_manager/V2TIMGroupManager/inviteUserToGroup.html">inviteUserToGroup</a></span><span class="signature">(<wbr><span class="parameter" id="inviteUserToGroup-param-groupID">{<span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span> <span class="parameter-name">groupID</span>, </span><span class="parameter" id="inviteUserToGroup-param-userList"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/List-class.html">List</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span>&gt;</span></span> <span class="parameter-name">userList</span>}</span>)
+            <span class="returntype parameter">&#8594; <a href="https://api.flutter.dev/flutter/dart-async/Future-class.html">Future</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="../models_v2_tim_value_callback/V2TimValueCallback-class.html">V2TimValueCallback</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.flutter.dev/flutter/dart-core/List-class.html">List</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="../models_v2_tim_group_member_operation_result/V2TimGroupMemberOperationResult-class.html">V2TimGroupMemberOperationResult</a></span>&gt;</span></span>&gt;</span></span>&gt;</span></span>
+          </span>
+                  </dt>
+        <dd>
+          邀请他人入群 <a href="../manager_v2_tim_group_manager/V2TIMGroupManager/inviteUserToGroup.html">[...]</a>
+                  
+</dd>
+        <dt id="kickGroupMember" class="callable">
+          <span class="name"><a href="../manager_v2_tim_group_manager/V2TIMGroupManager/kickGroupMember.html">kickGroupMember</a></span><span class="signature">(<wbr><span class="parameter" id="kickGroupMember-param-groupID">{<span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span> <span class="parameter-name">groupID</span>, </span><span class="parameter" id="kickGroupMember-param-memberList"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/List-class.html">List</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span>&gt;</span></span> <span class="parameter-name">memberList</span>, </span><span class="parameter" id="kickGroupMember-param-reason"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span> <span class="parameter-name">reason</span>}</span>)
+            <span class="returntype parameter">&#8594; <a href="https://api.flutter.dev/flutter/dart-async/Future-class.html">Future</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="../models_v2_tim_callback/V2TimCallback-class.html">V2TimCallback</a></span>&gt;</span></span>
+          </span>
+                  </dt>
+        <dd>
+          踢人 <a href="../manager_v2_tim_group_manager/V2TIMGroupManager/kickGroupMember.html">[...]</a>
+                  
+</dd>
+        <dt id="muteGroupMember" class="callable">
+          <span class="name"><a href="../manager_v2_tim_group_manager/V2TIMGroupManager/muteGroupMember.html">muteGroupMember</a></span><span class="signature">(<wbr><span class="parameter" id="muteGroupMember-param-groupID">{<span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span> <span class="parameter-name">groupID</span>, </span><span class="parameter" id="muteGroupMember-param-userID"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span> <span class="parameter-name">userID</span>, </span><span class="parameter" id="muteGroupMember-param-seconds"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> <span class="parameter-name">seconds</span>}</span>)
+            <span class="returntype parameter">&#8594; <a href="https://api.flutter.dev/flutter/dart-async/Future-class.html">Future</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="../models_v2_tim_callback/V2TimCallback-class.html">V2TimCallback</a></span>&gt;</span></span>
+          </span>
+                  </dt>
+        <dd>
+          禁言（只有管理员或群主能够调用） 
+                  
+</dd>
+        <dt id="noSuchMethod" class="callable inherited">
+          <span class="name"><a href="https://api.flutter.dev/flutter/dart-core/Object/noSuchMethod.html">noSuchMethod</a></span><span class="signature">(<wbr><span class="parameter" id="noSuchMethod-param-invocation"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/Invocation-class.html">Invocation</a></span> <span class="parameter-name">invocation</span></span>)
+            <span class="returntype parameter">&#8594; dynamic</span>
+          </span>
+                  </dt>
+        <dd class="inherited">
+          Invoked when a non-existent method or property is accessed. <a href="https://api.flutter.dev/flutter/dart-core/Object/noSuchMethod.html">[...]</a>
+                  <div class="features">inherited</div>
+</dd>
+        <dt id="refuseGroupApplication" class="callable">
+          <span class="name"><a href="../manager_v2_tim_group_manager/V2TIMGroupManager/refuseGroupApplication.html">refuseGroupApplication</a></span><span class="signature">(<wbr><span class="parameter" id="refuseGroupApplication-param-groupID">{<span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span> <span class="parameter-name">groupID</span>, </span><span class="parameter" id="refuseGroupApplication-param-reason"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span> <span class="parameter-name">reason</span>, </span><span class="parameter" id="refuseGroupApplication-param-fromUser"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span> <span class="parameter-name">fromUser</span>, </span><span class="parameter" id="refuseGroupApplication-param-toUser"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span> <span class="parameter-name">toUser</span>, </span><span class="parameter" id="refuseGroupApplication-param-addTime"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> <span class="parameter-name">addTime</span>, </span><span class="parameter" id="refuseGroupApplication-param-type"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> <span class="parameter-name">type</span>}</span>)
+            <span class="returntype parameter">&#8594; <a href="https://api.flutter.dev/flutter/dart-async/Future-class.html">Future</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="../models_v2_tim_callback/V2TimCallback-class.html">V2TimCallback</a></span>&gt;</span></span>
+          </span>
+                  </dt>
+        <dd>
+          拒绝某一条加群申请 
+                  
+</dd>
+        <dt id="setGroupApplicationRead" class="callable">
+          <span class="name"><a href="../manager_v2_tim_group_manager/V2TIMGroupManager/setGroupApplicationRead.html">setGroupApplicationRead</a></span><span class="signature">(<wbr>)
+            <span class="returntype parameter">&#8594; <a href="https://api.flutter.dev/flutter/dart-async/Future-class.html">Future</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="../models_v2_tim_callback/V2TimCallback-class.html">V2TimCallback</a></span>&gt;</span></span>
+          </span>
+                  </dt>
+        <dd>
+          标记申请列表为已读 
+                  
+</dd>
+        <dt id="setGroupAttributes" class="callable">
+          <span class="name"><a href="../manager_v2_tim_group_manager/V2TIMGroupManager/setGroupAttributes.html">setGroupAttributes</a></span><span class="signature">(<wbr><span class="parameter" id="setGroupAttributes-param-groupID">{<span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span> <span class="parameter-name">groupID</span>, </span><span class="parameter" id="setGroupAttributes-param-attributes"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/Map-class.html">Map</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span>, <span class="type-parameter"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span>&gt;</span></span> <span class="parameter-name">attributes</span>}</span>)
+            <span class="returntype parameter">&#8594; <a href="https://api.flutter.dev/flutter/dart-async/Future-class.html">Future</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="../models_v2_tim_callback/V2TimCallback-class.html">V2TimCallback</a></span>&gt;</span></span>
+          </span>
+                  </dt>
+        <dd>
+          设置群属性。已有该群属性则更新其 value 值，没有该群属性则添加该属性。 
+                  
+</dd>
+        <dt id="setGroupInfo" class="callable">
+          <span class="name"><a href="../manager_v2_tim_group_manager/V2TIMGroupManager/setGroupInfo.html">setGroupInfo</a></span><span class="signature">(<wbr><span class="parameter" id="setGroupInfo-param-groupID">{<span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span> <span class="parameter-name">groupID</span>, </span><span class="parameter" id="setGroupInfo-param-groupType"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span> <span class="parameter-name">groupType</span>, </span><span class="parameter" id="setGroupInfo-param-groupName"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span> <span class="parameter-name">groupName</span>, </span><span class="parameter" id="setGroupInfo-param-notification"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span> <span class="parameter-name">notification</span>, </span><span class="parameter" id="setGroupInfo-param-introduction"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span> <span class="parameter-name">introduction</span>, </span><span class="parameter" id="setGroupInfo-param-faceUrl"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span> <span class="parameter-name">faceUrl</span>, </span><span class="parameter" id="setGroupInfo-param-isAllMuted"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a></span> <span class="parameter-name">isAllMuted</span>, </span><span class="parameter" id="setGroupInfo-param-addOpt"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> <span class="parameter-name">addOpt</span>}</span>)
+            <span class="returntype parameter">&#8594; <a href="https://api.flutter.dev/flutter/dart-async/Future-class.html">Future</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="../models_v2_tim_callback/V2TimCallback-class.html">V2TimCallback</a></span>&gt;</span></span>
+          </span>
+                  </dt>
+        <dd>
+          修改群资料 
+                  
+</dd>
+        <dt id="setGroupMemberInfo" class="callable">
+          <span class="name"><a href="../manager_v2_tim_group_manager/V2TIMGroupManager/setGroupMemberInfo.html">setGroupMemberInfo</a></span><span class="signature">(<wbr><span class="parameter" id="setGroupMemberInfo-param-groupID">{<span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span> <span class="parameter-name">groupID</span>, </span><span class="parameter" id="setGroupMemberInfo-param-userID"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span> <span class="parameter-name">userID</span>, </span><span class="parameter" id="setGroupMemberInfo-param-nameCard"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span> <span class="parameter-name">nameCard</span>}</span>)
+            <span class="returntype parameter">&#8594; <a href="https://api.flutter.dev/flutter/dart-async/Future-class.html">Future</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="../models_v2_tim_callback/V2TimCallback-class.html">V2TimCallback</a></span>&gt;</span></span>
+          </span>
+                  </dt>
+        <dd>
+          修改指定的群成员资料 
+                  
+</dd>
+        <dt id="setGroupMemberRole" class="callable">
+          <span class="name"><a href="../manager_v2_tim_group_manager/V2TIMGroupManager/setGroupMemberRole.html">setGroupMemberRole</a></span><span class="signature">(<wbr><span class="parameter" id="setGroupMemberRole-param-groupID">{<span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span> <span class="parameter-name">groupID</span>, </span><span class="parameter" id="setGroupMemberRole-param-userID"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span> <span class="parameter-name">userID</span>, </span><span class="parameter" id="setGroupMemberRole-param-role"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> <span class="parameter-name">role</span>}</span>)
+            <span class="returntype parameter">&#8594; <a href="https://api.flutter.dev/flutter/dart-async/Future-class.html">Future</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="../models_v2_tim_callback/V2TimCallback-class.html">V2TimCallback</a></span>&gt;</span></span>
+          </span>
+                  </dt>
+        <dd>
+          切换群成员的角色。 <a href="../manager_v2_tim_group_manager/V2TIMGroupManager/setGroupMemberRole.html">[...]</a>
+                  
+</dd>
+        <dt id="setReceiveMessageOpt" class="callable">
+          <span class="name"><a href="../manager_v2_tim_group_manager/V2TIMGroupManager/setReceiveMessageOpt.html">setReceiveMessageOpt</a></span><span class="signature">(<wbr><span class="parameter" id="setReceiveMessageOpt-param-groupID">{<span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span> <span class="parameter-name">groupID</span>, </span><span class="parameter" id="setReceiveMessageOpt-param-opt"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> <span class="parameter-name">opt</span>}</span>)
+            <span class="returntype parameter">&#8594; <a href="https://api.flutter.dev/flutter/dart-async/Future-class.html">Future</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="../models_v2_tim_callback/V2TimCallback-class.html">V2TimCallback</a></span>&gt;</span></span>
+          </span>
+                  </dt>
+        <dd>
+          修改群消息接收选项 <a href="../manager_v2_tim_group_manager/V2TIMGroupManager/setReceiveMessageOpt.html">[...]</a>
+                  
+</dd>
+        <dt id="toString" class="callable inherited">
+          <span class="name"><a href="https://api.flutter.dev/flutter/dart-core/Object/toString.html">toString</a></span><span class="signature">(<wbr>)
+            <span class="returntype parameter">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span>
+          </span>
+                  </dt>
+        <dd class="inherited">
+          Returns a string representation of this object. 
+                  <div class="features">inherited</div>
+</dd>
+        <dt id="transferGroupOwner" class="callable">
+          <span class="name"><a href="../manager_v2_tim_group_manager/V2TIMGroupManager/transferGroupOwner.html">transferGroupOwner</a></span><span class="signature">(<wbr><span class="parameter" id="transferGroupOwner-param-groupID">{<span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span> <span class="parameter-name">groupID</span>, </span><span class="parameter" id="transferGroupOwner-param-userID"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span> <span class="parameter-name">userID</span>}</span>)
+            <span class="returntype parameter">&#8594; <a href="https://api.flutter.dev/flutter/dart-async/Future-class.html">Future</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="../models_v2_tim_callback/V2TimCallback-class.html">V2TimCallback</a></span>&gt;</span></span>
+          </span>
+                  </dt>
+        <dd>
+          转让群主 <a href="../manager_v2_tim_group_manager/V2TIMGroupManager/transferGroupOwner.html">[...]</a>
+                  
+</dd>
+      </dl>
+    </section>
+
+    <section class="summary offset-anchor inherited" id="operators">
+      <h2>Operators</h2>
+      <dl class="callables">
+        <dt id="operator ==" class="callable inherited">
+          <span class="name"><a href="https://api.flutter.dev/flutter/dart-core/Object/operator_equals.html">operator ==</a></span><span class="signature">(<wbr><span class="parameter" id="==-param-other"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/Object-class.html">Object</a></span> <span class="parameter-name">other</span></span>)
+            <span class="returntype parameter">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a></span>
+          </span>
+                  </dt>
+        <dd class="inherited">
+          The equality operator. <a href="https://api.flutter.dev/flutter/dart-core/Object/operator_equals.html">[...]</a>
+                  <div class="features">inherited</div>
+</dd>
+      </dl>
+    </section>
+
+
+
+
+  </div> <!-- /.main-content -->
+
+  <div id="dartdoc-sidebar-right" class="col-xs-6 col-sm-6 col-md-2 sidebar sidebar-offcanvas-right">
+    <ol>
+    
+    
+      <li class="section-title inherited">
+        <a href="../manager_v2_tim_group_manager/V2TIMGroupManager-class.html#instance-properties">Properties</a>
+      </li>
+      <li class="inherited"><a href="https://api.flutter.dev/flutter/dart-core/Object/hashCode.html">hashCode</a></li>
+      <li class="inherited"><a href="https://api.flutter.dev/flutter/dart-core/Object/runtimeType.html">runtimeType</a></li>
+    
+      <li class="section-title"><a href="../manager_v2_tim_group_manager/V2TIMGroupManager-class.html#instance-methods">Methods</a></li>
+      <li><a href="../manager_v2_tim_group_manager/V2TIMGroupManager/acceptGroupApplication.html">acceptGroupApplication</a></li>
+      <li><a href="../manager_v2_tim_group_manager/V2TIMGroupManager/createGroup.html">createGroup</a></li>
+      <li><a href="../manager_v2_tim_group_manager/V2TIMGroupManager/deleteGroupAttributes.html">deleteGroupAttributes</a></li>
+      <li><a href="../manager_v2_tim_group_manager/V2TIMGroupManager/getGroupApplicationList.html">getGroupApplicationList</a></li>
+      <li><a href="../manager_v2_tim_group_manager/V2TIMGroupManager/getGroupAttributes.html">getGroupAttributes</a></li>
+      <li><a href="../manager_v2_tim_group_manager/V2TIMGroupManager/getGroupMemberList.html">getGroupMemberList</a></li>
+      <li><a href="../manager_v2_tim_group_manager/V2TIMGroupManager/getGroupMembersInfo.html">getGroupMembersInfo</a></li>
+      <li><a href="../manager_v2_tim_group_manager/V2TIMGroupManager/getGroupOnlineMemberCount.html">getGroupOnlineMemberCount</a></li>
+      <li><a href="../manager_v2_tim_group_manager/V2TIMGroupManager/getGroupsInfo.html">getGroupsInfo</a></li>
+      <li><a href="../manager_v2_tim_group_manager/V2TIMGroupManager/getJoinedGroupList.html">getJoinedGroupList</a></li>
+      <li><a href="../manager_v2_tim_group_manager/V2TIMGroupManager/initGroupAttributes.html">initGroupAttributes</a></li>
+      <li><a href="../manager_v2_tim_group_manager/V2TIMGroupManager/inviteUserToGroup.html">inviteUserToGroup</a></li>
+      <li><a href="../manager_v2_tim_group_manager/V2TIMGroupManager/kickGroupMember.html">kickGroupMember</a></li>
+      <li><a href="../manager_v2_tim_group_manager/V2TIMGroupManager/muteGroupMember.html">muteGroupMember</a></li>
+      <li class="inherited"><a href="https://api.flutter.dev/flutter/dart-core/Object/noSuchMethod.html">noSuchMethod</a></li>
+      <li><a href="../manager_v2_tim_group_manager/V2TIMGroupManager/refuseGroupApplication.html">refuseGroupApplication</a></li>
+      <li><a href="../manager_v2_tim_group_manager/V2TIMGroupManager/setGroupApplicationRead.html">setGroupApplicationRead</a></li>
+      <li><a href="../manager_v2_tim_group_manager/V2TIMGroupManager/setGroupAttributes.html">setGroupAttributes</a></li>
+      <li><a href="../manager_v2_tim_group_manager/V2TIMGroupManager/setGroupInfo.html">setGroupInfo</a></li>
+      <li><a href="../manager_v2_tim_group_manager/V2TIMGroupManager/setGroupMemberInfo.html">setGroupMemberInfo</a></li>
+      <li><a href="../manager_v2_tim_group_manager/V2TIMGroupManager/setGroupMemberRole.html">setGroupMemberRole</a></li>
+      <li><a href="../manager_v2_tim_group_manager/V2TIMGroupManager/setReceiveMessageOpt.html">setReceiveMessageOpt</a></li>
+      <li class="inherited"><a href="https://api.flutter.dev/flutter/dart-core/Object/toString.html">toString</a></li>
+      <li><a href="../manager_v2_tim_group_manager/V2TIMGroupManager/transferGroupOwner.html">transferGroupOwner</a></li>
+    
+      <li class="section-title inherited"><a href="../manager_v2_tim_group_manager/V2TIMGroupManager-class.html#operators">Operators</a></li>
+      <li class="inherited"><a href="https://api.flutter.dev/flutter/dart-core/Object/operator_equals.html">operator ==</a></li>
+    
+    
+    
+    
+    </ol>
+  </div><!--/.sidebar-offcanvas-->
+
+</main>
+
+<footer>
+  <span class="no-break">
+    tencent_im_sdk_plugin
+      1.0.2
+  </span>
+
+</footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="../static-assets/typeahead.bundle.min.js"></script>
+<script src="../static-assets/highlight.pack.js"></script>
+<script src="../static-assets/URI.js"></script>
+<script src="../static-assets/script.js"></script>
+
+
+</body>
+
+</html>
